@@ -95,7 +95,7 @@ Food()
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - food1;
-            printf("Torn %d Bath",torn);
+            printf("Torn %.2f Bath",torn);
             break;
         }
         break;
@@ -178,7 +178,7 @@ Snacks()
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - snack1;
-            printf("Torn %d Bath",torn);
+            printf("Torn %.2f Bath",torn);
             break;
         }
         break;
@@ -231,7 +231,7 @@ Snacks()
 Drinks()
 {
     int drink = 0;
-    float drink1=20.00,drink2=15.00,drink3=30.00;
+    float drink1=18.00,drink2=15.00,drink3=15.00;
     float money;
     float torn;
     char ch;
@@ -260,7 +260,7 @@ Drinks()
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - drink1;
-            printf("Torn %d Bath",torn);
+            printf("Torn %.2f Bath",torn);
             break;
         }
         break;

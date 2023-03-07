@@ -4,7 +4,6 @@
 int main()
 {
     char x;
-    int num1 = 0;
     int age;
     char str[3][50], name, surname;
     printf("Please login first :\n");
@@ -31,6 +30,13 @@ int main()
         scanf("%d", &x);
     } while (x != 1);
     // system("cls");
+    menu();
+
+    return 0;
+}
+
+menu(){
+    int num1;
     printf("Welcome to menu >>>> ");
     printf("\n========MENU========");
     printf("\n 1 : Foods ");
@@ -39,32 +45,26 @@ int main()
     printf("\n 4 : Exit");
     printf("\n-Choose-:");
     scanf("%d", &num1);
-    if (num1 = 1)
+    if (num1 == 1)
     {
-        Food();
+        Foods();
     }
-    else if (num1 = 2)
+    else if (num1 == 2)
     {
         Snacks();
     }
-    else if (num1 = 3)
+    else if (num1 == 3)
     {
         Drinks();
-    }
-    else if (num1 = 4)
-    {
-        main();
     }
     else
     {
     }
-
-    return 0;
 }
 
-Food()
+Foods()
 {
-    int food = 0;
+    int food;
     float food1=20.00,food2=15.00,food3=30.00;
     float money;
     float torn;
@@ -87,6 +87,10 @@ Food()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -96,7 +100,6 @@ Food()
             scanf("%f", &money);
             torn = money - food1;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 2:
@@ -107,6 +110,10 @@ Food()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -116,7 +123,6 @@ Food()
             scanf("%f", &money);
             torn = money - food2;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 3:
@@ -127,6 +133,10 @@ Food()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -136,7 +146,6 @@ Food()
             scanf("%f", &money);
             torn = money - food3;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
         
@@ -148,7 +157,7 @@ Food()
 
 Snacks()
 {
-    int snack = 0;
+    int snack;
     float snack1=20.00,snack2=9.00,snack3=15.00;
     float money;
     float torn;
@@ -170,6 +179,10 @@ Snacks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -179,7 +192,6 @@ Snacks()
             scanf("%f", &money);
             torn = money - snack1;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 2:
@@ -190,6 +202,10 @@ Snacks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -199,7 +215,6 @@ Snacks()
             scanf("%f", &money);
             torn = money - snack2;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 3:
@@ -210,16 +225,19 @@ Snacks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Snackjack ");
             printf("Total : %.2f", snack3);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - snack3;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
         
@@ -230,7 +248,7 @@ Snacks()
 }
 Drinks()
 {
-    int drink = 0;
+    int drink;
     float drink1=18.00,drink2=15.00,drink3=15.00;
     float money;
     float torn;
@@ -238,7 +256,7 @@ Drinks()
     printf("\n========MENU DRINK========");
     printf("\n1.Oishi Sprakling Green Tea");
     printf("\n2.Coke Soft Drink Original");
-    printf("3.Pepsi");
+    printf("\n3.Pepsi");
     printf("\n-Choose-:");
     scanf("%d", &drink);
 
@@ -252,6 +270,10 @@ Drinks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -261,7 +283,6 @@ Drinks()
             scanf("%f", &money);
             torn = money - drink1;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 2:
@@ -272,6 +293,10 @@ Drinks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -281,7 +306,6 @@ Drinks()
             scanf("%f", &money);
             torn = money - drink2;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     case 3:
@@ -292,6 +316,10 @@ Drinks()
         scanf("%s", &ch);
         switch (ch)
         {
+        case 'N':
+            menu();
+        case 'n':
+            menu();
         case 'Y':
         case 'y':
             printf("       Bill");
@@ -301,7 +329,6 @@ Drinks()
             scanf("%f", &money);
             torn = money - drink3;
             printf("Torn %.2f Bath",torn);
-            break;
         }
         break;
     default:

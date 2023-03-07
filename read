@@ -69,6 +69,9 @@ Foods()
     float money;
     float torn;
     char ch;
+    int a,b,c,d,e,f,g,h,x,y,total;
+
+    
 
     printf("\n========MENU FOOD========");
     printf("\n1.Rice");
@@ -93,13 +96,49 @@ Foods()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Rice ");
             printf("Total : %.2f", food1);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - food1;
+            total = money - food1;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 2:
@@ -116,13 +155,48 @@ Foods()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Mama ");
             printf("Total : %.2f", food2);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - food2;
+            total = money - food2;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 3:
@@ -139,13 +213,48 @@ Foods()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Steak ");
             printf("Total : %.2f", food3);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - food3;
+            total = money - food3;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
         
@@ -162,6 +271,7 @@ Snacks()
     float money;
     float torn;
     char ch;
+    int a,b,c,d,e,f,g,h,x,y,total;
     printf("\n========MENU SNACK========");
     printf("\n1.Lays");
     printf("\n2.Euro");
@@ -185,13 +295,49 @@ Snacks()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Lays ");
             printf("Total : %.2f", snack1);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - snack1;
+            total = money - snack1;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 2:
@@ -208,13 +354,47 @@ Snacks()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Euro ");
             printf("Total : %.2f", snack2);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - snack2;
+            total = money - snack2;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 3:
@@ -237,7 +417,41 @@ Snacks()
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - snack3;
+            total = money - snack3;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
         
@@ -253,6 +467,7 @@ Drinks()
     float money;
     float torn;
     char ch;
+    int a,b,c,d,e,f,g,h,x,y,total;
     printf("\n========MENU DRINK========");
     printf("\n1.Oishi Sprakling Green Tea");
     printf("\n2.Coke Soft Drink Original");
@@ -276,13 +491,48 @@ Drinks()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Oishi Sprakling Green Tea ");
             printf("Total : %.2f", drink1);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - drink1;
+            total = money - drink1;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 2:
@@ -299,13 +549,47 @@ Drinks()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Coke Soft Drink Original ");
             printf("Total : %.2f", drink2);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - drink2;
+            total = money - drink2;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     case 3:
@@ -322,13 +606,48 @@ Drinks()
             menu();
         case 'Y':
         case 'y':
-            printf("       Bill");
+            printf("\n       Bill");
             printf("\nName: Pepsi ");
             printf("Total : %.2f", drink3);
             printf("\nInput Money :> ");
             scanf("%f", &money);
             torn = money - drink3;
+            total = money - drink3;
             printf("Torn %.2f Bath",torn);
+            a=total/1000;
+        printf("\nBank 1,000 = %d",a);
+             b=total%1000;
+             c=b/100;
+       if (c>=5){
+        printf("\nBank 500 = %d",1);
+              c=c-5;
+       }
+        else{
+        }
+        printf("\nBank 100 = %d",c);
+              d=total%100;
+              e=d/10;
+        if (e>=5)
+        {
+        printf("\nBank 50 = %d",1);
+              e=e-5;
+        }
+        else{
+        }
+              f=e/2;
+        printf("\nBank 20 = %d",f);
+
+              g=e%2;
+        printf("\nCoin 10 = %d",g);
+              h=total%10;
+        if (h>=5)
+        {
+        printf("\ncoin 5 = %d",1);
+              h=h-5;
+        } 
+        else{
+        }
+        printf("\nCoin 1 = %d",h);
         }
         break;
     default:
